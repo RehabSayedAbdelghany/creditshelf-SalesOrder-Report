@@ -39,15 +39,16 @@ PSOT  http://localhost:9090/upload/sales
 
 ###  all the sales by company
 
-GET  http://localhost:9090/salesorder/<Company name>
+GET  http://localhost:9090/salesorder/{Company name}
 
 
 ###  company revenues report
-GET  http://localhost:9090/salesorder/<Company name>/revenues
+GET  http://localhost:9090/salesorder/{Company name}/revenues
 
 
 ###  company net profit report
-GET  http://localhost:9090/salesorder/<Company name>/netprofits
+GET  http://localhost:9090/salesorder/{Company name}/netprofits
+
 
 
 
