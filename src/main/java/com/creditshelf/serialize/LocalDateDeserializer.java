@@ -20,7 +20,7 @@ public class LocalDateDeserializer extends JsonDeserializer<LocalDate> {
 		if(p.getText().isEmpty())
 			return null;
 		Locale bLocale = new Locale("en", "US");
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy",bLocale);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/dd/yy",bLocale);
 		return LocalDate.parse(p.getText(), formatter);
 		
 	}
